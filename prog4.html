@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head><title> Program 4 </title> </head>
+<body>
+	<script>
+		var str = prompt("enter the input") ;
+		if( !isNaN(str) )
+		{
+            var num=parseInt(str);
+
+            num = num + "";
+	        var rem= num.split("").reverse().join("");
+			/*var num = 0 , rev = 0 , rem = 0 ;
+			num = parseInt(str) ;
+			while(num != 0 )
+			{
+				rem = num % 10 ;
+				num = parseInt(num / 10);
+				rev = rev * 10 + rem ;
+			}*/
+			alert("reverse of "+str+" is "+rem) ;
+		}
+		else
+		{
+			i = str.search(/[aeiouAEIOU]/) ;
+			if( i != -1)
+				alert("the position of the left most vowel is "+(i+1))
+			else
+				alert("no vowel found in the string")
+		
+		}
+
+		</script>
+	</body>
+</html>
